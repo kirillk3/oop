@@ -2,6 +2,7 @@
 #include <string>
 
 // https://www.programiz.com/cpp-programming/online-compiler/
+// https://www.jdoodle.com/online-compiler-c++/  (interactive mode)
 
 class human
 {
@@ -64,7 +65,6 @@ public:
         freckles = (a.freckles) and (b.freckles);
         myopia = (a.freckles) and (b.freckles);
         std::cout << "Исходя из доминантных признаков вероятны следующие признаки у ребёнка: " << std::endl;
-        std::cout << "Волосы тёмные, ";
         if (haircolor == false)
             std::cout << "Волосы тёмные, ";
         else
@@ -92,7 +92,7 @@ child c; //-ребенок с
 
 int main()
 {
-    std::cout << "Программа по доминантным признакам родителей определит вероятные признаки, которые будут у ребёнка" << std::endl;
+    std::cout << "Программа по доминантным и рецессивным признакам родителей определит вероятные признаки, которые будут у ребёнка" << std::endl;
 
     std::cout << "Первый родитель:" << std::endl;
     a.setparams();
