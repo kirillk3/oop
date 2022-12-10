@@ -3,6 +3,7 @@
 
 // https://www.programiz.com/cpp-programming/online-compiler/
 // https://www.jdoodle.com/online-compiler-c++/  (interactive mode)
+// https://replit.com/languages/cpp
 
 class human
 {
