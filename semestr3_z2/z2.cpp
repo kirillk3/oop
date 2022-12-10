@@ -88,23 +88,21 @@ public:
     };
 };
 
+child c; //-ребенок с
+
 int main()
 {
     std::cout << "Программа по доминантным признакам родителей определит вероятные признаки, которые будут у ребёнка" << std::endl;
 
     std::cout << "Первый родитель:" << std::endl;
     a.setparams();
-    std::cout << "Выбраны:  ";
     a.getparams();
     std::cout << std::endl;
 
     std::cout << "Второй родитель:" << std::endl;
     b.setparams();
-    std::cout << "Выбраны: ";
     b.getparams();
     std::cout << std::endl;
-
-    child c;
 
     std::cout << "___________ИТОГ:___________" << std::endl;
     c.getparams();
