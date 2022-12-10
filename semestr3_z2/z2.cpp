@@ -27,25 +27,26 @@ public:
     };
     void getparams()
     {
+        std::cout << "Заданы параметры родителя: " << std::endl;
         if (haircolor == false)
             std::cout << "Волосы тёмные, ";
-        else if (haircolor == true)
+        else
             std::cout << "Волосы светлые, ";
         if (curlyorstraight == false)
             std::cout << "курчавые. ";
-        else if (curlyorstraight == true)
+        else
             std::cout << "прямые. ";
         if (eyecolor == false)
             std::cout << "Глаза карие. ";
-        else if (eyecolor == true)
+        else
             std::cout << "Глаза голубые или серые. ";
         if (freckles == false)
             std::cout << "Есть веснушки. ";
-        else if (freckles == true)
+        else
             std::cout << "Нет веснушек. ";
         if (myopia == false)
             std::cout << "Близорукость.";
-        else if (myopia == true)
+        else
             std::cout << "Отсутствие близорукости.";
     };
 };
@@ -62,26 +63,27 @@ public:
         eyecolor = (a.eyecolor) and (b.eyecolor);
         freckles = (a.freckles) and (b.freckles);
         myopia = (a.freckles) and (b.freckles);
+        std::cout << "Исходя из доминантных признаков вероятны следующие признаки у ребёнка: " << std::endl;
         std::cout << "Волосы тёмные, ";
         if (haircolor == false)
             std::cout << "Волосы тёмные, ";
-        else if (haircolor == true)
+        else
             std::cout << "Волосы светлые, ";
         if (curlyorstraight == false)
             std::cout << "курчавые. ";
-        else if (curlyorstraight == true)
+        else
             std::cout << "прямые. ";
         if (eyecolor == false)
             std::cout << "Глаза карие. ";
-        else if (eyecolor == true)
+        else
             std::cout << "Глаза голубые или серые. ";
         if (freckles == false)
             std::cout << "Есть веснушки. ";
-        else if (freckles == true)
+        else
             std::cout << "Нет веснушек. ";
         if (myopia == false)
             std::cout << "Близорукость.";
-        else if (myopia == true)
+        else
             std::cout << "Отсутствие близорукости.";
     };
 };
@@ -104,7 +106,7 @@ int main()
 
     child c;
 
-    std::cout << "Вероятные признаки, которые будут у ребёнка:" << std::endl;
+    std::cout << "___________ИТОГ:___________" << std::endl;
     c.getparams();
 
     return 0;
